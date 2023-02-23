@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links in html</title>
+        <style>
+        a{
+            margin: 10px;
+        }
+        h3{
+            color: blue;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- HTML links are hyperlinks. -->
+        <h1>Links</h1>
+        <!-- The most important attribute of the <a> element is the href attribute, which indicates the link's destination. -->
+        <!-- The link text is the part that will be visible to the reader. -->
+        <!-- <a href="https://www.facebook.com/" style="text-decoration:none">facebook</a> -->
+  
+        <!-- The target attribute specifies where to open the linked document. -->
+        <!-- _self - Default. Opens the document in the same window/tab as it was clicked -->
+        <a href="https://www.facebook.com/" style="text-decoration:none"
+            target="_self">facebook</a>
+
+        <!-- _blank - Opens the document in a new window or tab -->
+        <a href="https://www.google.com/" style="text-decoration:none"
+            target="_blank">google</a>
+
+        <!-- _parent - Opens the document in the parent frame -->
+        <a href="https://www.geeksforgeeks.org/" style="text-decoration:none"
+            target="_parent">geeksforgeeks</a>
+
+        <!-- _top - Opens the document in the full body of the window -->
+        <a href="https://html.spec.whatwg.org/multipage/"
+            style="text-decoration:none" target="_top">HTML</a>
+
+        <!-- Absolute URLs vs. Relative URLs
+    Both examples above are using an absolute URL (a full web address) in the href attribute. 
+    A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part): -->
+        <h3>Absolute URLs</h3>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+
+        <h3>Relative URLs</h3>
+        <p><a href="/images/background_1.jpeg">HTML Images</a></p>
+        <p><a href="/images/background_2.jpeg">CSS Tutorial</a></p>
+
+        <!-- To use an image as a link, just put the <img> tag inside the <a> tag: -->
+        <a href="/html/formatting.html">
+            <img src="/images/background_3.jpeg" alt="HTML tutorial"
+            style="width:100px;height:100px;">
+        </a>
+
+        <!-- Link to an Email Address -->
+        <!-- Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): -->
+        <a href="mailto:example@gmail.com">Send mail</a>
+
+        <!-- Button as a Link -->
+        <button onclick="document.location='https://www.geeksforgeeks.org/html/'">HTML Tutorial</button>
+
+        <!-- The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+        <a href="https://www.geeksforgeeks.org/html/" title="Go to geeksforgeeks HTML section">Visit our HTML Tutorial</a>
+
+    </body>
+</html>

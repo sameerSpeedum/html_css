@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>image map</title>
+        <style>
+            body{
+                background-image: url("/images/background_4.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Image Map</h1>
+        <!-- <img src="/images/background_1.jpeg" alt="Workplace" usemap="#workmap"> -->
+
+        <!-- The <map> element is used to create an image map, and is linked to the image by using the required name attribute: -->
+        <!-- The name attribute must have the same value as the <img>'s usemap attribute . -->
+        <map name="workmap">
+            <!-- A clickable area is defined using an <area> element. -->
+            <!-- rect - defines a rectangular region -->
+            <area shape="rect" coords="34,44,270,350" alt="Computer"
+                href="/html/formatting.html">
+
+            <!-- poly - defines a polygonal region -->
+            <area shape="poly" coords="290,172,333,250" alt="Phone"
+                href="/html/images.html">
+
+            <!-- default - defines the entire region  -->
+            <area shape="default" coords="290,172,333,250" alt="Phone"
+                href="/html/images.html">
+                    
+            <!-- circle - defines a circular region -->
+            <area shape="circle" coords="337,300,44" alt="Coffee"
+                href="/html/paragraph.html">
+        </map>
+
+        <!-- <picture>
+            <source media="(min-width:650px)" srcset="background_3.jpeg">
+            <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+            <img src="/images/background_3.jpeg" alt="Flowers" style="width:auto;">
+          </picture> -->
+
+    </body>
+</html>

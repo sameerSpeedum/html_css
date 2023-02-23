@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>link colors</title>
+        <style>
+        /* By default, a link will appear like this (in all browsers):
+        An unvisited link is underlined and blue
+        A visited link is underlined and purple
+        An active link is underlined and red
+        You can change the link state colors, by using CSS: */
+        
+        /* a:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(30, 182, 91);
+            background-color: transparent;
+            text-decoration: none;
+        } */
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+             background-color: rgb(149, 255, 0);
+        }
+</style>
+
+    </style>
+    </head>
+    <body>
+        <h1>Link colors</h1>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://www.pexels.com/photo/selective-focus-photography-of-dried-leaves-1590549/"
+            target="_blank">Link</a>
+        <a href="https://www.geeksforgeeks.org/" target="_blank">geeksforgeeks</a>
+        
+    </body>
+</html>

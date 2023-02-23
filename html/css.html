@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css in html</title>
+        <!-- An external style sheet is used to define the style for many HTML pages. -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- An internal CSS is used to define a style for a single HTML page. -->
+        <style>
+           
+
+
+            body {background-color: powderblue;}
+            /* The CSS color property defines the text color to be used. */
+            h1   {color: blue; 
+            /* The CSS font-family property defines the font to be used. */
+                font-family: verdana; 
+            /* The CSS font-size property defines the text size to be used. */
+               font-size: 300%;
+            }
+            p  {color: brown; 
+                font-family: courier;
+                font-size: 120%;
+                /* The CSS border property defines a border around an HTML element. */
+                border: 3px solid black;
+                /* The CSS padding property defines a padding (space) between the text and the border. */
+                padding: 25px;
+                /* The CSS margin property defines a margin (space) outside the border. */
+                margin: 30px;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            architecto voluptatem soluta saepe, temporibus modi fuga totam
+            maxime facere reprehenderit placeat minus error voluptatum eveniet,
+            aliquid reiciendis consequatur quas. Earum, officiis sed eaque
+            repellendus placeat velit hic ut recusandae, facilis dolores
+            corporis in ducimus sit.</p>
+        <!-- An inline CSS is used to apply a unique style to a single HTML element. -->
+        <h3 style="color: red;">Inline - by using the style attribute inside
+            HTML elements</h3>
+        <h3 style="color: green;">Internal - by using a style element in the
+            head section</h3>
+        <h3 style="color:blue;">External - by using a link element to link to an
+            external CSS file</h3>
+    </body>
+</html>
