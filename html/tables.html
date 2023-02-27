@@ -12,42 +12,64 @@
         <style>
             table{
                 width: 50%;
+                /* border-collapse: collapse; */
+                background-color: aquamarine;
+                border-spacing: 10px;
             }
-            #th1{
+            /* the border-bottom property to all tr elements to get horizontal dividers: */
+            tr {
+                border-bottom: 1px solid #ddd;
+            }
+            tr:hover{
+                background-color: #D6EEEE;
+            }
+            td:hover{
+               background-color:#43d6d6;
+            }
+            td,th{
+                /* background-color: aquamarine; */
+            }
+            /* To style every other table row element, use the :nth-child(even) selector like this: */
+            tr:nth-child(even) {
+                /* background-color: #43d6d6; */
+            }
+            /* Set the :nth-child(even) for table data elements like this: */
+            td:nth-child(even), th:nth-child(even) {
+               /* background-color: #43d6d6; */
+            }
+            table,td,th{
+                border: 2px solid white;
+                border-collapse: collapse;
+                text-align: center;
+                /* With the border-radius property, the borders get rounded corners: */
+                border-radius: 2px;
+                /* With the border-style property, you can set the appearance of the border. */
+                border-style: double;
+                /* border color property  */
+                border-color: #010a3a;
+                /* To add padding on table cells, use the CSS padding property: */
+                padding: 10px;
+            }
+            th{
                 /*align content inside <th> (with CSS): */
-                /* text-align:left; */
+                /* text-align:center; */
                 /* set the height of a table header cell (with CSS): */
                 height:20px;
                 /* vertical align content inside <th> (with CSS): */
                 vertical-align:bottom;
                 /* add background-color to table header cell (with CSS): */
-                background-color: #FF0000;
+                background-color: burlywood;
                 /* specify no word-wrapping in table header cell (with CSS): */
                 white-space:"nowrap";
                 /* set the width of a table header cell (with CSS): */
                 width: 30%;
                 /* display: table-cell;
                 vertical-align: inherit;
-                font-weight: bold;
                 text-align: center; */
                 /* display: table-column-group; */
+                font-weight: bold;
+            }
 
-
-            }
-            #th2{
-                text-align:center;
-                height:20px;
-                vertical-align:bottom;
-                background-color: green;
-                width: 30%;
-            }
-            #th3{
-                text-align: left;
-                height:20px;
-                vertical-align:bottom;
-                background-color: rgb(1, 138, 138);
-                width: 30%;
-            }
         </style>
         <hr>
         <table>
@@ -74,35 +96,35 @@
         <table style="width:50%">
             <caption>Company Data</caption>
             <colgroup>
-                <col style="background-color: yellowgreen;">
-                <col span="2" style="background-color:red;">
-                <col style="background-color: blue;">
+                <col>
+                <col span="2">
+                <col>
             </colgroup>
             <tr>
-                <th id="th1">Month</th>
+                <th>Month</th>
                 <!-- The colspan attribute defines the number of columns a header cell should span. -->
                 <!-- <th colspan="2">Savings</th> -->
                 <!-- The rowspan attribute defines the number of rows a header cell should span. -->
-                <th id="th2" colspan="2" >Savings</th>
-                <th id="th3" >Account no.</th>
+                <th colspan="2">Savings</th>
+                <th>Account no.</th>
             </tr>
             <tr>
-                <td style="text-align:left" >January</td>
-                <td style="text-align:left">80$</td>
-                <td style="text-align:left">80$</td>
-                <td style="text-align:left">12593</td>
+                <td>January</td>
+                <td>80$</td>
+                <td>80$</td>
+                <td>12593</td>
             </tr>
             <tr>
-                <td style="text-align:left">March</td>
-                <td style="text-align:left">40$</td>
-                <td style="text-align:left">80$</td>
-                <td style="text-align:left">12854</td>
+                <td>March</td>
+                <td>40$</td>
+                <td>80$</td>
+                <td>12854</td>
             </tr>
             <tr>
-                <td style="text-align:left">January</td>
-                <td style="text-align:left">80$</td>
-                <td style="text-align:left">80$</td>
-                <td style="text-align:left">12632</td>
+                <td>January</td>
+                <td>80$</td>
+                <td>80$</td>
+                <td>12632</td>
             </tr>
         </table>
     </body>

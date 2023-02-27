@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List items</title>
+        <style>
+            a{
+                text-decoration: none;
+            }
+            #nav{
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               overflow: hidden;
+               background-color: #333333;
+            }
+            #items{
+                float: left;
+            }
+            #items a {
+               display: block;
+               color: white;
+               text-align: center;
+               padding: 15px;
+               text-decoration: none;
+            }
+            #items a:hover {
+               background-color: #111111;
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul id="nav">
+            <li id="items"></li>
+            <li id="items"><a href="#home">Home</a></li>
+            <li id="items"><a href="#news">News</a></li>
+            <li id="items"><a href="#contact">Contact</a></li>
+            <li id="items"><a href="#about">About</a></li>
+          </ul>
+        <h2>List in html</h2>
+          
+        <h4>HTML lists allow web developers to group a set of related items in
+            lists.</h4>
+        <!-- An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. -->
+        <ul style="list-style-type:square;">
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ul>
+        <!-- An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. -->
+        <ol type="A">
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ol>
+        <!-- A description list is a list of terms, with a description of each term.
+   The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term -->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+            <dt>Tea</dt>
+            <dd>- green hot tea</dd>
+        </dl>
+        <h5>Lists can be nested (list inside list):</h5>
+        <ul>
+            <li>Coffee
+                <ul>
+                    <li>cold coffee</li>
+                    <li>hot coffee</li>
+                </ul>
+            </li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+    </body>
+</html>

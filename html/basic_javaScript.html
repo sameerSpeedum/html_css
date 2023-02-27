@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction of JavaScript</title>
+        <!-- In this example, a JavaScript function is placed in the <head> section of an HTML page.
+        The function is invoked (called) when a button is clicked: -->
+        <script>function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Introduction of JavaScript</h1>
+        <p id="demo">One of many JavaScript HTML methods is getElementById().</p>
+        <span>The example below "finds" an HTML element (with id="demo"), and
+            changes the element content (innerHTML) to "Hello JavaScript":</span>
+        <p>Changing the style of an HTML element, is a variant of changing an
+            HTML attribute:</p>
+        <h2>Demo JavaScript in Head</h2>
+        <p id="demo">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+        <!-- In this example, a JavaScript function is placed in the <body> section of an HTML page.
+        The function is invoked (called) when a button is clicked: -->
+        <h2>Demo JavaScript in Body</h2>
+
+        <p id="demo">A Paragraph</p>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+
+        <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        </script>
+    </body>
+    <script>
+    // One of many JavaScript HTML methods is getElementById().
+    document.getElementById("demo").innerHTML = "Hello JavaScript!.";
+    // Changing the style of an HTML element, is a variant of changing an HTML attribute:
+    document.getElementById("demo").style.fontSize = "35px"
+    // Hiding HTML elements can be done by changing the display style:
+    document.getElementById("demo").style.display = "none";
+    // Showing hidden HTML elements can also be done by changing the display style:
+    document.getElementById("demo").style.display = "block";
+</script>
+</html>
