@@ -1,0 +1,161 @@
+/* The background-color property specifies the background color of an element. */
+body {
+    /* a valid color name - like "red" */
+    /* background-color: red;      */
+    /* a HEX value - like "#ff0000" */
+    /* background-color: #ff0000; */
+    /* an RGB value - like "rgb(255,0,0)" */
+    /* background-color: rgb(255, 0, 0); */
+    /* The background-image property specifies an image to use as the background of an element.
+    By default, the image is repeated so it covers the entire element. */
+    /* background-image: url("/images/background_3.jpeg"); */
+    /* Showing the background image only once is also specified by the background-repeat property: */
+    /* background-repeat: no-repeat; */
+    /* The background-position property is used to specify the position of the background image. */
+    /* background-position: center;
+    background-attachment: fixed;
+    background-size: 75% 75%; */
+}
+
+body {
+    background-image: url("/images/background_6.jpg");
+    /* Showing the background image only once is also specified by the background-repeat property: */
+    background-repeat: no-repeat;
+    /* The background-position property is used to specify the position of the background image. */
+    background-position: center;
+    background-attachment: fixed;
+    /* background-size: cover; */
+    /* width: 100%;
+    height: 100%; */
+    background-size: 100% 100%;
+    color: white;
+
+}
+
+h1 {
+    display: inline-block;
+    background-color: lightblue;
+}
+
+h2 {
+    display: inline-block;
+    background-color: lightblue;
+}
+
+
+div {
+    /* background-color: green; */
+    /* The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent: */
+    opacity: 1;
+    /* If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text: */
+    /* An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). */
+    background: rgba(0, 128, 0, 0.3);
+    /* Green background with 30% opacity */
+    width: auto;
+    margin: inherit;
+    border: 2px solid red;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+p {
+    background-color: transparent;
+    /* The CSS margin properties are used to create space around elements, outside of any defined borders.
+    With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left). */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    /* color: white; */
+    margin-left: 20px;
+    /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+    With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left). */
+    padding: 20px;
+}
+
+/* The border-style property specifies what kind of border to display. */
+/* dotted - Defines a dotted border */
+p.dotted {
+    border-style: dotted;
+    /* The border-width property specifies the width of the four borders.
+    The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick: */
+    border-width: 5px;
+    border-color: blue;
+    /* border-color: black; */
+
+}
+
+/* dashed - Defines a dashed border */
+p.dashed {
+    border-style: dashed;
+    border-width: medium;
+    border-color: rgb(3, 61, 3);
+    /* From the examples on the previous pages, you have seen that it is possible to specify a different border for each side.
+    In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left): */
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-radius: 10px;
+}
+
+/* solid - Defines a solid border */
+p.solid {
+    border-style: dotted solid double dashed;
+    /* The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border): */
+    border-width: 2px 20px;
+    /* The border property is a shorthand property for the following individual border properties: */
+    border: 5px solid red;
+    /* border-color: red; */
+}
+
+/* double - Defines a double border */
+p.double {
+    border-style: double;
+    border-width: thick;
+}
+
+/* groove - Defines a 3D grooved border. The effect depends on the border-color value */
+p.groove {
+    border-style: groove;
+    border-width: 25px 10px 15px 35px;
+    border-color: red green blue yellow;
+}
+
+/* ridge - Defines a 3D ridged border. The effect depends on the border-color value */
+p.ridge {
+    border-style: ridge;
+    border-width: 20px 5px;
+    border-color: chocolate;
+}
+
+/* inset - Defines a 3D inset border. The effect depends on the border-color value */
+p.inset {
+    border-style: inset;
+    border-left: 6px solid red;
+    /* border-color: darkviolet; */
+}
+
+/* outset - Defines a 3D outset border. The effect depends on the border-color value */
+p.outset {
+    border-style: outset;
+}
+
+/* none - Defines no border */
+p.none {
+    border-style: none;
+}
+
+/* hidden - Defines a hidden border */
+p.hidden {
+    border-style: hidden;
+}
+
+/* The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border). */
+p.mix {
+    border-style: dotted dashed solid double;
+    /* border-color: gold; */
+    border-bottom: 10px solid red;
+    /* border-width: 10px 10px; */
+}

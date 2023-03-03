@@ -1,0 +1,285 @@
+body {
+    background-color: lightgray;
+    background-attachment: fixed;
+    opacity: 0.7;
+    /* background: transparent; */
+}
+
+h1,
+h2 {
+    color: darkblue;
+    background-color: lightgreen;
+    display: inline-block;
+}
+
+h3 {
+    color: rgba(44, 2, 88, 0.5);
+    background-color: lightblue;
+    display: inline-block;
+}
+
+
+h4 {
+    color: brown;
+    background-color: tan;
+    display: inline-block;
+}
+
+/* The text-align property is used to set the horizontal alignment of a text.
+A text can be left or right aligned, centered, or justified. */
+#text_alignment_center {
+    text-align: center;
+}
+
+#text_alignment_right {
+    text-align: right;
+
+}
+
+#text_alignment_left {
+    text-align: left;
+
+}
+
+#text_alignment_end {
+    text-align: end;
+}
+
+/* When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers): */
+#text_alignment_justify {
+    text-align: justify;
+    border: 2px solid darkblue;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+
+}
+
+#text_alignment {
+    background-color: honeydew;
+    /* padding: 5px; */
+    display: inline-block
+}
+
+#text_align_property {
+    border: 2px solid black;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+/* Text Align Last
+The text-align-last property specifies how to align the last line of a text. */
+#text-align-last {
+    border: 2px solid darkblue;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+p.text_align_last_A {
+    text-align-last: right;
+}
+
+p.text_align_last_B {
+    text-align-last: center;
+}
+
+p.text_align_last_C {
+    text-align-last: justify;
+}
+
+/* The direction and unicode-bidi properties can be used to change the text direction of an element: */
+#text-direction {
+    border: 2px solid darkgreen;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+h5 {
+    background-color: rgb(202, 245, 245);
+    margin: 10px;
+    font-style: inherit;
+    font-size: 15px;
+    display: inline-block;
+}
+
+p.direction_p {
+    direction: rtl;
+}
+
+p.unicode_p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+/* The vertical-align property sets the vertical alignment of an element. */
+#vertical_alignment {
+    border: 2px solid darkred;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+img.default_a {
+    vertical-align: baseline;
+}
+
+img.text-top_b {
+    vertical-align: text-top;
+}
+
+img.text-bottom_c {
+    vertical-align: text-bottom;
+}
+
+img.sub_d {
+    vertical-align: sub;
+}
+
+img.sup_e {
+    vertical-align: super;
+}
+
+/* Add a Decoration Line to Text
+The text-decoration-line property is used to add a decoration line to text. */
+#text-dectoration {
+    background-color: rgb(248, 230, 232);
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 4px;
+}
+
+#overline {
+    text-decoration-line: overline;
+    /* Specify a Color for the Decoration Line
+    The text-decoration-color property is used to set the color of the decoration line. */
+    text-decoration-color: blue;
+    /* Specify a Style for the Decoration Line
+    The text-decoration-style property is used to set the style of the decoration line. */
+    text-decoration-style: solid;
+    /* Specify the Thickness for the Decoration Line
+    The text-decoration-thickness property is used to set the thickness of the decoration line. */
+}
+
+#underline {
+    text-decoration-line: underline;
+    text-decoration-color: darkviolet;
+    text-decoration-style: double;
+
+}
+
+#line-through {
+    text-decoration-line: line-through;
+    text-decoration-color: darkred;
+    text-decoration-style: dotted;
+}
+
+#overline_underline {
+    /* text-decoration-line: overline underline;
+    text-decoration-color: darkgreen;
+    text-decoration-style: wavy; */
+    text-decoration: overline underline red double 5px;
+}
+
+p.note-paragraph {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+}
+
+/* Text Transformation
+The text-transform property is used to specify uppercase and lowercase letters in a text. */
+#text-transformation {
+    border: 2px solid green;
+    padding: 8px;
+    margin-bottom: 4px;
+    background-color: linen;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
+
+/* Text Spacing
+In this chapter you will learn about the following properties: */
+#text-spacing {
+    border: 2px solid darkslategray;
+    padding: 8px;
+    margin-bottom: 4px;
+    background-color: rgb(252, 228, 167);
+}
+
+b {
+    color: blue
+}
+
+/* The text-indent property is used to specify the indentation of the first line of a text: */
+p.indent {
+    text-indent: 50px;
+}
+
+/* The letter-spacing property is used to specify the space between the characters in a text. */
+p.spacing_p1 {
+    letter-spacing: -2px;
+}
+
+p.spacing_p2 {
+    letter-spacing: 5px;
+}
+
+/* The line-height property is used to specify the space between lines: */
+p.small {
+    line-height: 0.7;
+}
+
+p.big {
+    line-height: 1.8;
+}
+
+/* The word-spacing property is used to specify the space between the words in a text. */
+p.one {
+    word-spacing: 10px;
+}
+
+p.two {
+    word-spacing: -2px;
+}
+
+/* The white-space property specifies how white-space inside an element is handled. */
+p.white-space {
+    white-space: nowrap;
+}
+
+/* Text Shadow
+The text-shadow property adds shadow to text. */
+#text-shadow {
+    border: 2px solid rgb(3, 43, 43);
+    padding: 8px;
+    margin-bottom: 4px;
+    background-color: rgb(205, 254, 230);
+}
+
+#h2-shadow {
+    text-shadow: 2px 2px;
+}
+
+#h1-shadow {
+    /* Next, add a color (red) to the shadow: */
+    text-shadow: 2px 2px red;
+}
+
+/* Then, add a blur effect (5px) to the shadow: */
+#h1-shadow-blur {
+    /* Next, add a color (red) to the shadow: */
+    /* text-shadow: 2px 2px 5px red; */
+    /* color: white;
+    text-shadow: 2px 2px 4px #000000; */
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}

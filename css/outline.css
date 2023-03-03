@@ -1,0 +1,93 @@
+/* The outline-style property specifies the style of the outline, and can have one of the following values: */
+
+/* none - Defines no outline
+hidden - Defines a hidden outline */
+body {
+    background-image: url(/images/background_6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+h1 {
+    color: aliceblue;
+    /* Text Color and Background Color
+    In this example, we define both the background-color property and the color property: */
+    background-color: aquamarine;
+    display: inline-block;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: darkred; */
+}
+
+/* dotted - Defines a dotted outline */
+p.dotted {
+    /* outline-style: dotted; */
+    color: darkblue;
+    outline: thick ridge pink;
+    /* The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent. */
+    outline-offset: 8px;
+    background-color: darkkhaki;
+    text-align: end;
+}
+
+/* dashed - Defines a dashed outline */
+p.dashed {
+    outline-style: dashed;
+    color: darkcyan;
+    background-color: lightcoral;
+    text-align: justify;
+}
+
+/* solid - Defines a solid outline */
+p.solid {
+    outline-style: solid;
+    color: darkgreen;
+    border: 4px solid black;
+    background-color: lightgreen;
+}
+
+/* double - Defines a double outline */
+p.double {
+    outline-style: double;
+    color: darkmagenta;
+    outline-width: 2px;
+    background-color: lightpink;
+}
+
+/* groove - Defines a 3D grooved outline */
+p.groove {
+    outline-style: groove;
+    color: darkslateblue;
+    outline-width: thin;
+    background-color: lightseagreen;
+}
+
+/* ridge - Defines a 3D ridged outline */
+p.ridge {
+    /* outline-style: ridge;
+    color: darkslategray; */
+    outline: 5px solid yellow;
+    background-color: lightsteelblue;
+}
+
+/* inset - Defines a 3D inset outline */
+p.inset {
+    outline-style: inset;
+    color: darkgoldenrod;
+    outline: medium;
+    background-color: lightcyan;
+}
+
+/* outset - Defines a 3D outset outline */
+p.outset {
+    outline-style: outset;
+    color: darkturquoise;
+    outline-width: 10px;
+    border: 2px solid black;
+    background-color: lightyellow;
+}
